@@ -1,0 +1,93 @@
+Elemento
+Cor sugerida
+Código HEX
+Principal
+Roxo escuro (realeza/mistério)
+#4B0082
+Secundária
+Dourado (nobreza/poder)
+#FFD700
+Fundo
+Preto ou cinza escuro (força)
+#1A1A1A ou #2B2B2B
+Detalhes
+Branco gelo (contraste limpo)
+#F2F2F2
+Acento
+Azul elétrico (relâmpago)
+#00FFFF ou #00BFFF
+---------------------------
+Para o raio:
+	•	Dourado forte (#FFD700) – passa poder, realeza e combina com o tema divino
+	•	Branco puro (#FFFFFF) – mais neutro e forte no contraste
+	•	Amarelo elétrico (#FFEA00) – dá uma vibe explosiva de energia
+
+Para o Zeus (figura):
+	•	Roxo escuro profundo (#2E003E ou #4B0082) – mantém o tema do site, mas com mais presença
+	•	Cinza mármore (#CCCCCC ou #AAAAAA) – lembra estátua de pedra, estilo grego
+	•	Preto sólido com traços dourados – passa imponência
+------------------------------------------------------------------------------------------------------------------
+⸻
+
+⚡ Tema: Academia Estilo Mitologia Grega
+
+🔥 Ideia Central
+
+Uma academia onde você treina como um deus. O conceito gira em torno de força, superação e evolução, com referências diretas ou sutis à mitologia grega. Dá pra brincar com nomes, ícones, cores e frases épicas.
+
+⸻
+
+🏛️ Nome e Identidade
+
+🧱 Sugestões de nome:
+	•	Zeus Gym (impactante e direto)
+	•	Olympus Fit
+	•	Deus Training
+	•	Titã Academia
+	•	Sparta Gym (embora mais espartano que olímpico)
+	•	Kratos Fit (referência moderna – God of War)
+
+🧠 Slogans possíveis:
+	•	“Treine como um deus.”
+	•	“Do esforço nasce o poder.”
+	•	“Suba ao Olimpo da sua melhor versão.”
+	•	“Força. Honra. Disciplina.”
+	•	“Deuses não descansam. E você?”
+
+⸻
+
+📑 Estrutura sugerida do site:
+
+🏠 Home
+	•	Banner com imagem épica (ex: estátua de Zeus + halteres ou raio estilizado)
+	•	Frase de impacto: “Desperte o deus dentro de você”
+	•	Botão: Matricule-se agora ou Conheça o Olimpo
+
+🏛️ Sobre a Zeus Gym
+	•	Missão: formar guerreiros modernos
+	•	Inspiração mitológica
+	•	Filosofia de treino (força, mente, corpo)
+
+🏋️ Modalidades (chamadas de “Desafios dos Deuses”, por exemplo)
+	•	Treino de Hércules (musculação pesada)
+	•	Desafio de Atena (funcional inteligente)
+	•	Corrida de Hermes (HIIT / cardio)
+	•	Rituais de Apolo (alongamento / yoga)
+
+💪 Planos (pode brincar com nomes):
+	•	Plano Mortal (básico)
+	•	Plano Semideus (intermediário)
+	•	Plano Deus do Olimpo (premium)
+
+🧔‍♂️ Equipe Olímpica
+	•	Treinadores com descrições como “especialista em forjar guerreiros”, “mestre da força bruta”, etc.
+
+📍 Localização & Contato
+
+⸻
+
+🎨 Estilo Visual:
+	•	Cores: Roxo + dourado/branco ou preto — transmite poder e misticismo
+	•	Fontes tipo “romanas” ou serifadas com impacto
+	•	Ícones de raios, lanças, tochas, colunas gregas
+	•	Backgrounds com textura de mármore, estátuas, nuvens e raios
