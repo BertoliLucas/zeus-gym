@@ -6,36 +6,36 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #37373f; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ce1212; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #100C1A; /* Background color for the entire website, including individual sections */
+  --default-color: #F5F5F5; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #F5C400; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #6731a8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: 	#1B1230; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #FFFFFF; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #7f7f90;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ce1212; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-color: 	#2E1A47;  /* The default color of the main navmenu links */
+  --nav-hover-color: 	#F5C400; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #1B1230; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #7f7f90; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ce1212; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color: #0000df; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #700000; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f2f2f2;
+  --background-color: #030303;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #1f1f24;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #37373f;
+  --background-color: #000000;
+  --default-color: #000000;
+  --heading-color: #000000;
+  --surface-color: #0000fd;
   --contrast-color: #ffffff;
 }
 
@@ -90,8 +90,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-width: 150px;
 }
 
 .header .logo h1 {
@@ -203,7 +202,7 @@ h6 {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--nav-hover-color);
+    background-color: #6731a8;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -219,7 +218,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: color-mix(in srgb, var(--nav-color) 80%, black 50%);
+    color: var(--contrast-color);
   }
 
   .navmenu .dropdown ul {
@@ -402,5 +401,493 @@ h6 {
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  position: relative;
+}
+
+.page-title .heading {
+  padding: 80px 0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.page-title .heading h1 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.page-title nav {
+  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  padding: 20px 0;
+}
+
+.page-title nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page-title nav ol li+li {
+  padding-left: 10px;
+}
+
+.page-title nav ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 0;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title span {
+  position: absolute;
+  top: 4px;
+  color: color-mix(in srgb, var(--heading-color), transparent 95%);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .section-title span {
+    font-size: 38px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  padding-top: 20px;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle, color-mix(in srgb, var(--accent-color), transparent 90%) 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .hero-content {
+  padding-right: 2.5rem;
+}
+
+@media (max-width: 991px) {
+  .hero .hero-content {
+    padding-right: 0;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+}
+
+.hero .hero-content .subtitle {
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.hero .hero-content .subtitle span {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+  position: relative;
+  color: color-mix(in srgb, var(--heading-color), transparent 20%);
+}
+
+.hero .hero-content .subtitle span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+@media (max-width: 991px) {
+  .hero .hero-content .subtitle span::after {
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.hero .hero-content .title {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+  color: var(--heading-color);
+}
+
+.hero .hero-content .title .highlight {
+  position: relative;
+  display: inline-block;
+  color: var(--accent-color);
+}
+
+.hero .hero-content .title .highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .hero .hero-content .title {
+    font-size: 3.8rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .hero-content .title {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .hero-content .title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .hero-content .title {
+    font-size: 2.4rem;
+  }
+}
+
+.hero .hero-content .description {
+  margin-bottom: 2.5rem;
+}
+
+.hero .hero-content .description p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.hero .hero-content .hero-buttons {
+  display: flex;
+  gap: 1.25rem;
+}
+
+@media (max-width: 991px) {
+  .hero .hero-content .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .hero-content .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.hero .hero-content .hero-buttons .primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero .hero-content .hero-buttons .primary-btn i {
+  margin-left: 8px;
+  font-size: 0.85rem;
+  transition: transform 0.3s ease;
+}
+
+.hero .hero-content .hero-buttons .primary-btn:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.hero .hero-content .hero-buttons .primary-btn:hover i {
+  transform: translateX(4px);
+}
+
+.hero .hero-content .hero-buttons .secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 75%);
+  background-color: transparent;
+  color: var(--default-color);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero .hero-content .hero-buttons .secondary-btn:hover {
+  border-color: var(--default-color);
+  transform: translateY(-3px);
+}
+
+.hero .hero-visual {
+  position: relative;
+}
+
+.hero .hero-visual .image-wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+  transition: transform 0.5s ease;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.hero .hero-visual .image-wrapper:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+}
+
+.hero .hero-visual .image-wrapper .main-image {
+  width: 100%;
+  height: 750px;
+  display: block;
+}
+
+.hero .hero-visual .image-wrapper .floating-element {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: color-mix(in srgb, var(--surface-color), transparent 40%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero .hero-visual .image-wrapper .floating-element i {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.hero .hero-visual .image-wrapper .floating-element.top-left {
+  top: -20px;
+  left: -20px;
+  animation-delay: 0.5s;
+}
+
+.hero .hero-visual .image-wrapper .floating-element.bottom-right {
+  bottom: -20px;
+  right: -20px;
+  animation-delay: 1.5s;
+}
+
+.hero .hero-visual .image-wrapper .experience-badge {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: color-mix(in srgb, var(--surface-color), transparent 40%);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  min-width: 140px;
+}
+
+.hero .hero-visual .image-wrapper .experience-badge .years {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  line-height: 1;
+}
+
+.hero .hero-visual .image-wrapper .experience-badge .text {
+  font-size: 0.85rem;
+  color: var(--default-color);
+  font-weight: 500;
+}
+
+.hero .hero-visual .client-counter {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+  background-color: var(--surface-color);
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 160px;
+}
+
+@media (max-width: 991px) {
+  .hero .hero-visual .client-counter {
+    right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .hero-visual .client-counter {
+    right: 20px;
+  }
+}
+
+.hero .hero-visual .client-counter .counter-number span {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--heading-color);
+}
+
+.hero .hero-visual .client-counter .counter-text span {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

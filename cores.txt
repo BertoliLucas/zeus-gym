@@ -1,34 +1,14 @@
-Elemento
-Cor sugerida
-Código HEX
-Principal
-Roxo escuro (realeza/mistério)
-#4B0082
-Secundária
-Dourado (nobreza/poder)
-#FFD700
-Fundo
-Preto ou cinza escuro (força)
-#1A1A1A ou #2B2B2B
-Detalhes
-Branco gelo (contraste limpo)
-#F2F2F2
-Acento
-Azul elétrico (relâmpago)
-#00FFFF ou #00BFFF
----------------------------
-Para o raio:
-	•	Dourado forte (#FFD700) – passa poder, realeza e combina com o tema divino
-	•	Branco puro (#FFFFFF) – mais neutro e forte no contraste
-	•	Amarelo elétrico (#FFEA00) – dá uma vibe explosiva de energia
-
-Para o Zeus (figura):
-	•	Roxo escuro profundo (#2E003E ou #4B0082) – mantém o tema do site, mas com mais presença
-	•	Cinza mármore (#CCCCCC ou #AAAAAA) – lembra estátua de pedra, estilo grego
-	•	Preto sólido com traços dourados – passa imponência
-------------------------------------------------------------------------------------------------------------------
-⸻
-
+Sugestão de Paleta para o Site Zeus Gym
+Tipo	HEX	Descrição
+background-color	#100C1A	Fundo principal escuro e moderno (roxão quase preto)
+default-color	#F5F5F5	Cor de texto padrão (branco/cinza claro), legível no fundo escuro
+heading-color	#F5C400	Destaque nos títulos com o amarelo do raio (chama atenção)
+accent-color	#0076FF	Azul vibrante para botões e links (reforça a identidade visual)
+surface-color	#1B1230	Cor de cards, seções e containers (levemente mais clara que o fundo)
+contrast-color	#FFFFFF	Branco puro para casos de destaque e máxima legibilidade
+nav-color	#2E1A47	Roxo da logo para a barra de navegação
+nav-hover-color	#F5C400	Amarelo vibrante ao passar o mouse no menu (chama a atenção)
+nav-mobile-background-color	#1B1230	Mesma vibe da surface-color, ideal para o menu responsivo
 ⚡ Tema: Academia Estilo Mitologia Grega
 
 🔥 Ideia Central
