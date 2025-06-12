@@ -602,7 +602,7 @@ section,
 
 @media (max-width: 991px) {
   .hero .hero-content {
-    padding-right: 0;
+    padding: 0px 10px 0px 10px ;
     margin-bottom: 4rem;
     text-align: center;
   }
@@ -1159,11 +1159,13 @@ section,
   overflow: hidden;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
+  border: 1px solid var(--background-color);
 }
 
 .portfolio .portfolio-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--heading-color);
 }
 
 .portfolio .portfolio-card:hover .portfolio-overlay {
@@ -1303,7 +1305,7 @@ section,
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .pricing .pricing-card:hover {
@@ -1315,25 +1317,41 @@ section,
   border: 2px solid var(--accent-color);
 }
 
+.pricing .pricing-card.popular:hover,
+.pricing .pricing-card:hover{
+  border: 2px solid var(--heading-color);
+}
+
 .pricing .pricing-card.popular .plan-cta .btn-plan {
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.pricing .pricing-card.popular .plan-cta .btn-plan:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+.pricing .pricing-card.popular:hover .plan-cta .btn-plan{
+  background-color: var(--heading-color);
 }
+
+.pricing .pricing-card.popular .plan-cta .btn-plan:hover {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 20%);
+}
+
+
 
 .pricing .pricing-card .popular-tag {
   position: absolute;
-  top: 20px;
-  right: -35px;
+  top: 25px;
+  right: -38px;
   background-color: var(--accent-color);
   color: var(--contrast-color);
   font-size: 13px;
   font-weight: 600;
   padding: 8px 40px;
   transform: rotate(45deg);
+}
+
+.pricing .pricing-card.popular:hover .popular-tag{
+  background-color: var(--heading-color);
+  transition: all ease-in-out .3s;
 }
 
 .pricing .plan-header {
